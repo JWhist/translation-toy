@@ -1,0 +1,10 @@
+[dev]
+  framework = "#static"
+
+[build]
+  command = "echo No build command"
+  publish = "/public"
+
+[[edge_functions]]
+  path = "/*"
+  function = "translate"
