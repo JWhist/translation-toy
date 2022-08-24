@@ -47,7 +47,7 @@ export default async (_req: Request, context: Context) => {
       })
       .on(".country", {
         element(e) {
-          e.setInnerContent(`You are in ${countries[country]}`)
+          e.setInnerContent(`You are in ${countries[country] ? countries[country] : 'someplace on Earth'}`)
         }
       })
     .transform(response)
